@@ -70,11 +70,13 @@ function VacancyCardContent({
 					)}
 				</Link>
 				{isButtonText ? (
-					<MyButton
-						className={`${styles.buttonRespondVacanciesList} ${styles.buttonVacanciesList}`}
-					>
-						Откликнуться
-					</MyButton>
+					<a href={vacancy.alternate_url}>
+						<MyButton
+							className={`${styles.buttonRespondVacanciesList} ${styles.buttonVacanciesList}`}
+						>
+							Откликнуться
+						</MyButton>
+					</a>
 				) : (
 					<a
 						href={vacancy.alternate_url}

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Header from '../../components/header/Header'
+
 import SearchMenu from '../../components/searchMenu/SearchMenu'
 import SideBar from '../../components/sideBar/SideBar'
 
@@ -22,7 +22,6 @@ function MainPage() {
 
 	return (
 		<>
-			<Header></Header>
 			<SearchMenu></SearchMenu>
 			<div className={styles.containerLayout}>
 				<SideBar></SideBar>

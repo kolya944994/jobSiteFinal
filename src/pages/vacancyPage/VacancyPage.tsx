@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import Header from '../../components/header/Header'
+
 import styles from './VacancyPage.module.css'
 import VacancyCard from '../../ui/vacancyCard/VacancyCard'
 import VacancyCardContent from '../../modules/vacancyCardContent/VacancyCardContent'
@@ -17,7 +17,6 @@ function VacancyPage() {
 	const vacancy = useLoaderData()
 	return (
 		<div>
-			<Header />
 			<div className={styles.vacanciesListPosition}>
 				{vacancy && (
 					<>

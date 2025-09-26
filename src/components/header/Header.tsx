@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 import logo from '../../assets/logo.svg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
 	return (
@@ -13,13 +13,21 @@ function Header() {
 					</Link>
 				</div>
 				<div className={styles.headerMenu}>
-					<a href=''>
+					<NavLink
+						to='/vacancy'
+						className={({ isActive }) => (isActive ? styles.jobLinkActive : '')}
+					>
 						<h4 className={styles.jobText}>Вакансии FE</h4>
-					</a>
+					</NavLink>
 
-					<a href='/'>
+					<NavLink
+						to='/about'
+						className={({ isActive }) =>
+							isActive ? styles.aboutLinkActive : ''
+						}
+					>
 						<h4 className={styles.aboutMe}>Обо мне</h4>
-					</a>
+					</NavLink>
 				</div>
 				<div></div>
 			</nav>

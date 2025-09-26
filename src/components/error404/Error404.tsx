@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import VacancyCard from '../../ui/vacancyCard/VacancyCard'
-import Header from '../header/Header'
+
 import styles from './Error404.module.css'
 
 import sadCat from '../../assets/sadCat.jpg'
@@ -9,7 +9,6 @@ import sadCat from '../../assets/sadCat.jpg'
 function Error404() {
 	return (
 		<div className={styles.containerError404}>
-			<Header />
 			<div className={styles.positionCardError404}>
 				<VacancyCard>
 					<div className={styles.allPositionCard}>
